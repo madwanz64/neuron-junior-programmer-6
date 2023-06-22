@@ -1,10 +1,8 @@
 <?php
 
-use App\Core\App;
+define('READONE_START', microtime(true));
 
 require_once __DIR__ . '/../autoloader.php';
-require_once '../App/init.php';
 
-
-$app = new App();
+$app = require_once '../App/app.php';
 
